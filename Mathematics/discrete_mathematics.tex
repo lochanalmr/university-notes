@@ -1,0 +1,174 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage[a4paper, margin=1in]{geometry}
+
+\begin{document}
+\title{Discrete Mathematics Notes}
+\author{Lochana Ranatunga}
+\maketitle
+
+\section{Propositions and Logical Language}
+\subsection*{Statements/Propositions}
+
+\begin{itemize}
+  \item A proposition is a declarative statement that is either true or false, but not both.
+  \item Commands, questions do not have a truth value, therefore not considered propositions in mathematical logic.
+  \item Truth value of open statements (ex. $x > 3$ , $x^2 + 1 = 0$) depends on the variable.
+\end{itemize}
+
+\subsection*{Logical Connectives}
+\begin{enumerate}
+  \item AND ($\land$)
+  \item OR ($\lor$)
+  \item NOT ($\neg$)
+  \item IF...THEN ($\rightarrow$)
+  \item IF AND ONLY IF ($\leftrightarrow$)
+\end{enumerate}
+
+\subsubsection*{Conjunction (AND)}
+Symbol: $\land$ \hspace{1.5cm}
+Form: $P \land Q$ \hspace{1.5cm}
+Meaning: Both P and Q are true \\
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+P & Q &  $P \land Q$\\
+\hline
+T & T & T \\
+\hline
+T & F & F \\
+\hline
+F & T & F \\
+\hline
+F & F & F \\
+\hline
+\end{tabular}
+\caption{Truth Table for AND}
+\end{table}
+
+\subsubsection*{Disjunction (OR)}
+Symbol: $\lor$ \hspace{1.5cm}
+Form: $P \lor Q$ \hspace{1.5cm}
+Meaning: At least one of P or Q are true \\
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+P & Q &  $P \lor Q$\\
+\hline
+T & T & T \\
+\hline
+T & F & T \\
+\hline
+F & T & T \\
+\hline
+F & F & F \\
+\hline
+\end{tabular}
+\caption{Truth Table for OR}
+\end{table}\\
+OR is inclusive, unless specifically stated that it is exclusive. (Inclusive OR is true, even when both are true)\\
+
+\subsubsection*{Implication (IF...THEN)}
+Symbol: $\rightarrow$ \hspace{1.5cm}
+Form: $P \rightarrow Q$ \hspace{1.5cm}
+Meaning: If P is true, then Q is true \\
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+P & Q &  $P \rightarrow Q$\\
+\hline
+T & T & T \\
+\hline
+T & F & F \\
+\hline
+F & T & T \\
+\hline
+F & F & T \\
+\hline
+\end{tabular}
+\caption{Truth Table for IF...THEN}
+\end{table}\\
+In classical logic, if the antecedent (P) is False, the implication is True irrespective to the truth value of the consequent (Q).
+Therefore, this is referred to as 'Material implication'.\\
+
+\subsubsection*{Biconditional (IF AND ONLY IF)}
+Symbol: $\leftrightarrow$ \hspace{1.5cm}
+Form: $P \leftrightarrow Q$ \hspace{1.5cm}
+Meaning: P is true, exactly when Q is true \\
+'If and only if' is abbreviated as, 'iff'.\\
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+P & Q &  $P \leftrightarrow Q$\\
+\hline
+T & T & T \\
+\hline
+T & F & F \\
+\hline
+F & T & F \\
+\hline
+F & F & T \\
+\hline
+\end{tabular}
+\caption{Truth Table for IF AND ONLY IF}
+\end{table}\\
+\textbf{Biconditional in terms of other logical connectives:}\\
+($p \leftrightarrow q) \equiv (p \rightarrow q) \land (q \rightarrow p)$\\
+$(p \leftrightarrow q) \equiv (p \land q) \lor (\neg p \land \neg q)$\\
+
+\subsubsection*{Negation (NOT)}
+Symbol: $\neg$ \hspace{1.5cm}
+Form: $\neg P$ \hspace{1.5cm}
+Meaning: not P is True. (P is False) \\
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+P & $\neg P $\\
+\hline
+T & F\\
+\hline
+F & T \\
+\hline
+\end{tabular}
+\caption{Truth Table for NOT}
+\end{table}\\
+
+\newpage
+\subsubsection*{Exclusive OR (XOR)}
+Symbol: $\oplus$ \hspace{1.5cm}
+Form: $P \oplus Q$ \hspace{1.5cm}
+Meaning:  True exactly when one of P or Q is true\\
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+P & Q &  $P \oplus Q$\\
+\hline
+T & T & F \\
+\hline
+T & F & T \\
+\hline
+F & T & T \\
+\hline
+F & F & F \\
+\hline
+\end{tabular}
+\caption{Truth Table for XOR}
+\end{table}\\
+\textbf{Biconditional in terms of other logical connectives:}\\
+($p \leftrightarrow q) \equiv (p \rightarrow q) \land (q \rightarrow p)$\\
+$(p \leftrightarrow q) \equiv (p \land q) \lor (\neg p \land \neg q)$\\
+
+\end{document}
