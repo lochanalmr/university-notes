@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.1)  2 MAY 2026 01:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.1)  2 MAY 2026 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,16 +699,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--221
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 223--231
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--231
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
 
  []
 
-[4] (computer_system_organization.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--263
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 265--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--278
+
+ []
+
+[5] (computer_system_organization.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -717,7 +757,7 @@ L3 programming layer <2026-03-20>
 Here is how much of TeX's memory you used:
  14095 strings out of 467691
  296564 string characters out of 5415472
- 684211 words of memory out of 5000000
+ 684212 words of memory out of 5000000
  42928 multiletter control sequences out of 15000+600000
  633439 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -736,9 +776,9 @@ US/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Us
 ers/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 msy7.pfb>
-Output written on computer_system_organization.pdf (4 pages, 143482 bytes).
+Output written on computer_system_organization.pdf (5 pages, 149603 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
